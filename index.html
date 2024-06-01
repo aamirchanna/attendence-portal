@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <style>
+        table{
+            border: 1px solid black;
+            padding: 5px;
+            margin: 0;
+            border-collapse: collapse;
+        }
+        tr, td, th{
+            border: 1px solid black;
+        }
+        td{
+            width: 100px;
+            padding: 5px;
+        }
+    </style> -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+    <input type="text" name="" placeholder="Name" id="name">
+    <input type="text" name="" placeholder="FatherName" id="fatherName">
+    <input type="number" name="" placeholder="Rollno" id="rollno">
+    <input type="number" name="" placeholder="age" id="age">
+
+    <button id="" onclick="addUser()">Add User</button>
+    <div class="status-box" id="presentBox"></div>
+    <div class="status-box" id="absentBox"></div>
+    <div class="status-box" id="leaveBox"></div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>FatherName</th>
+                <th>Class</th>
+                <th>Roll No</th>
+                <th>Age</th>
+                <th>Remarks</th>
+                <th>Present</th>
+                <th>Absent</th>
+                <th>Leave</th>
+            </tr>
+        </thead>
+        <tbody id="userTable"></tbody>
+    </table>
+
+    
+    
+    <script src="app.js"></script>
+</body>
+</html>

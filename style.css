@@ -1,0 +1,177 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.form input, .form button {
+    padding: 12px;
+    margin-bottom: 10px;
+    width: calc(50% - 15px);
+    border: 2px solid #007bff; /* Theme color changed to blue */
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease, transform 0.3s ease;
+}
+
+.form input:focus, .form button:focus {
+    outline: none;
+    border-color: #0056b3; /* Darker shade of blue on focus */
+    transform: scale(1.02);
+}
+
+.form button {
+    background-color: #007bff; /* Theme color changed to blue */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form button:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 14px 18px;
+    text-align: left;
+}
+
+table th {
+    background-color: #007bff; /* Theme color changed to blue */
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tbody tr:hover {
+    background-color: #ddd;
+}
+
+.fa-heart {
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.fa-heart:hover {
+    color: #ff4d4d;
+}
+
+.fa-heart.active {
+    color: #ff4d4d;
+    animation: pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+tfoot {
+    font-weight: bold;
+    border: 1px solid white;
+    background-color: #000000;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.status-box {
+    width: 30%;
+    padding: 15px;
+    margin: 20px auto;
+    border: 2px solid #007bff; /* Theme color changed to blue */
+    border-radius: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    animation: slideIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.status-box h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 20px;
+    text-align: center;
+    color: #007bff; /* Theme color changed to blue */
+}
+
+.status-box p {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="number"],
+button#addUserBtn {
+    padding: 12px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+button#addUserBtn {
+    background-color: #007bff; /* Theme color changed to blue */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button#addUserBtn:hover {
+    background-color: #0056b3; /* Darker shade of blue on hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
